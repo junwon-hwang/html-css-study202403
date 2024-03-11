@@ -1,0 +1,55 @@
+
+### 하 난이도:
+
+1. HTML 문서에는 `div` 요소가 있고, 이 요소에 `class` 속성으로 "container"가 할당되어 있습니다. 
+이 `div` 요소 내에 있는 모든 `p` 요소의 텍스트 색상을 파란색으로 지정해 보세요.
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.container > p{
+      color : blue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="container">
+      <p>메롱 메롱 메롱 메롱 메롱</p>
+    </div>
+  </div>
+  
+</body>
+</html>
+ 
+2. 다음 HTML 코드에서 "list" 클래스를 가진 `ul` 요소의 자식 `li` 요소들의 
+   폰트 크기를 14px로 변경하세요.
+
+
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        ul.list{
+          font-size: 14px;
+        }
+      </style>
+    </head>
+    <body>
+      <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </body>
+    </html>
+
+
+
