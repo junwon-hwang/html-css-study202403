@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /*
+      자식, 후손, 형제 선택자
+      - 가장 마지막 선택자가 타겟이고
+        앞에는 전부 조건이다.
+    */
+
+    div>.orange{
+      background: orange;
+    }
+
+    ul>.orange{
+      background: red;
+    }
+
+    body > div > ul > #apple{
+
+      color : red;  
+      
+    }
+
+    #circle>h1.title>.left.low>#banana{
+
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <!-- div>ul>li*3 -->
+<div>
+  <ul>
+    <li id="apple">사과</li>
+    <li class="big hilight">포도</li>
+    <li class="orange big hilight">오렌지</li>
+  </ul>
+
+  <!-- div+p+span -->
+  <div>당근</div>
+  <p class="big">토마토</p>
+  <span class="orange">오렌지</span>
+
+</div>
+
+</body>
+</html>
