@@ -1,0 +1,53 @@
+### 상 난이도:
+
+1. 아래 HTML 코드에서 "container" 클래스를 가진 `div` 요소 내에 있는 `p` 요소 중 직속 자식이 아닌 모든
+ `p` 요소의 텍스트를 굵게(Bold) 변경하세요.
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container div > p{
+               color : red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>This is a paragraph.</p>
+            <div>
+                <p>This is another paragraph.</p>
+            </div>
+            <p>Yet another paragraph.</p>
+        </div>
+    </body>
+    </html>
+    
+
+
+2. 다음 HTML 코드에서 "list" 클래스를 가진 `ul` 요소 내의 직속 자식 `li` 요소의 배경색을 회색으로 변경하세요.
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .list > li{
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>        
+    </body>
+    </html>
+ 
+
+
