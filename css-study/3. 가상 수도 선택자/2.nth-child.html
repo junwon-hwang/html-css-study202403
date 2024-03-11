@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+
+ #fruits li:nth-child(3){
+    color: red;
+  }
+
+  #food li:last-child {
+    background: olive;
+  }
+
+  #fruits li:first-child{
+    font-size: 24px;
+  }
+
+
+  /*n에 0부터 순차적으로 대입해봤을때 선택되는 태그를 스타일 
+  2n+1 ==== 홀수번째 ==== odd
+  2n ==== 짝수번째  ====  even
+  */
+  #fruits li:nth-child(n+3){
+    background: aqua;
+  }
+
+  #food li:not(.melon){
+    list-style-type: none;
+  }
+
+
+  .sports div:nth-of-type(3){
+    background: blue;
+  }
+
+</style>
+<body>
+
+  <div class="sports">
+    <div>축구</div>
+    <div>농구</div>
+    <p>하하호호</p>
+    <div>배구</div>
+    <div>야구</div>
+  </div>
+
+  <ul id="food">
+    <li>초코</li>
+    <li class="melon">메론</li>
+    <li>바밤</li>
+    <li>크림</li>
+  </ul>
+
+
+
+  <ul id="fruits">
+    <li>딸기</li>
+    <li>망고</li>
+    <li>사과</li>
+    <li>바나나</li>
+    <li>오렌지</li>
+    <li>자몽</li>
+    <li>포도</li>
+  </ul>
+  
+</body>
+</html>
