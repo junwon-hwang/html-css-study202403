@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* 실무에서는 먼저 box-sizing : border-box 전체 설정하고 시작함*/
+    *{
+      box-sizing: border-box;
+    }
+
+    .container{
+      width: 500px;
+      height: 500px;
+      background: orange; 
+      margin: 100px;
+
+      /* padding 설정하면 600*570의 배경이 설정됨 */
+      /* padding 사용시 가로세로의 길이를 재설정해줘야함 */
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px; 
+
+      /* padding을 확인하고 가로 세로 사이즈 재설정해줌*/
+      /* padding 사용시 반드시 같이 사용 할 것*/
+      box-sizing: border-box;
+    }
+    .box{
+      width: 50%;
+      height: 50%;
+      background: tomato;
+      font-size: 1.5em;
+      color: white;
+      padding-left: 20px; /*텍스트 있을때 padding 사용하면 가독성이 올라감*/
+      box-sizing: border-box;
+    }
+
+    .card{
+      width: 250px;
+      height: 350px;
+      border: 2px solid gray;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 2px 2px 5px 5px #999;
+      padding: 10px;
+    }
+    .card .image{
+      border: 2px solid lightgray;
+      height: 250px;
+      border-radius: 15px;
+      overflow: hidden; /* 넘치는 부분은 overflow: hidden으로 숨김 */ 
+   
+    }
+    
+    .card .content{
+      
+    }
+
+    .card .image img{
+      height: 100%; /* 액자가 큰쪽으로 가로 or 세로 설정 */
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <!-- 카드 이미지 가이드 로직 -->
+  <div class="card">
+    <div class="image">
+      <img src="../../../img.jpg" alt="">
+    </div>
+    <p class="content">
+      공룡입니다.
+    </p>
+  </div>
+  
+
+  <div class="container">
+    <div class="box">안뇽안뇽</div>
+  </div>
+
+
+</body>
+</html>

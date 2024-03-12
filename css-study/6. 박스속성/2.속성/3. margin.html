@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+    }
+    .container{
+      width: 400px;
+      height: 300px;
+      border: 4px solid red;
+      margin-left: 40px; /*레이아웃에서 박스와 박스의 거리를 조절*/
+      margin-top: 100px;
+      /* margin-right: 100px ;
+      margin-bottom: 100px ; */
+    }
+    .box{
+     width: 25%; /*p-% e-em r-rem*/
+     height: 100px;
+     border: 4px solid gray;
+     background: #333;
+    }
+    .box:first-child{
+      margin-bottom: 20px;
+    }
+
+    .box:last-child{
+      margin-left: 5px;
+      margin-top: 5px; /*마진 중복시 큰쪽으로 흡수*/
+      margin-right: 5px;
+      margin-bottom: 5px;
+
+      margin: 5px; /* 4방향에 전부 5px margin추가 */
+      margin: 10px 20px; /*10 -> 상하  20 -> 좌우*/
+      margin: 10px 20px 30px; /*10-> 상  20 -> 좌우  30-> 하*/
+      margin: 10px 20px 30px 40px; /* 12시부터 시계방향으로 설정 */
+    }
+
+    section{
+      width: 400px;
+      border: 4px solid greenyellow;
+    }
+
+    section h1{
+      width: 70%;
+      border: 4px solid violet;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;    /*auto 로 넣으면 남은 마진을 자동 분배 */
+      margin : 0 auto;      /*h1 은 위아래 기본 마진을 가지고 있음 */
+    }
+    section h2{            /* 기본마진이 100% 이기때문에 */
+      width: fit-content;  /* 가로길이를 제한해 줘야 마진 auto 사용가능 */ 
+      margin : 10px auto;  /* 마진을 분배하려면 여유 마진이 있어야함 */
+      text-align: center;
+      background: tomato;
+    }
+
+  </style>
+</head>
+<body>
+  
+  
+  <section>
+    <h1>안녕하세요</h1>
+    <h2>메롱메롱</h2>
+  </section>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+
+</body>
+</html>
