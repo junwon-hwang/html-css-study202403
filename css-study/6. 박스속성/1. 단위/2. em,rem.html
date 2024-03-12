@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*브라우저 제공 기본 픽셀은 16px*/
+
+    html{
+      font-size: 10px;
+    }
+
+    div{
+      border: 2px solid gray;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+    }
+    .root{
+      /*20px*40 = 800 px*/ 
+      /*em은 자기 자신 대비 폰트사이즈에 영향을 받는 단위*/       
+      /*실무적은 측면에서 잘 사용하지 않음*/
+      /* width: 40em;  */
+      
+      
+      
+      /* html 태그에서 지정한 폰트사이즈에 영향을 받는 단위 */
+      /* 10px*40 = 400px*/
+      width: 20rem;
+      font-size: 20px;
+    }
+    .parent{
+      width: 50%;
+      margin-left: 10%; 
+    }
+    .child{
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+    <div class="root">ROOT
+      <div class="parent">PARENT
+        <div class="child">CHILD1</div>
+        <div class="child">CHILD2</div>
+      </div>
+    </div>
+</body>
+</html>
