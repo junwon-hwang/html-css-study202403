@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+    .box{
+      width: 550px;
+      height: 350px;
+      border: 4px dashed gray;
+      margin: 50px auto;
+      
+      background-color: orange;
+      background-image: url(../../img/sky.jpg);
+      /* 배경 이미지 사이즈 조정 */
+      /* width height 입력 가능*/
+      background-size: 100px 100px;
+      background-repeat: no-repeat;
+      /* 배경 인지 위치 조정*/
+      /* 앞 X축  뒤 Y축 */
+      background-position: center top;
+
+      background: no-repeat red url(../../img/sky.jpg)
+                  /* 앞에가 위치 / 뒤에가 사이즈 (/) 반드시 사이에 넣어야함 */
+                  left center / 200px 70px;
+
+    }
+  
+
+
+  
+  </style>
+</head>
+<body>
+  
+
+
+  <div class="box"></div>
+
+
+  
+  
+</body>
+</html>
