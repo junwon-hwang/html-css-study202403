@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    div.container{
+      width: 70%;
+      margin: 50px;
+      background: lightgray;
+      border: 3px double black;
+    }
+
+    div.container .main-title h1{
+      text-align: center;
+      font-size: 50px;
+      font-family: serif;
+      padding: 15px;
+    }
+
+    div.container .sub-title h2{
+      width: 100%;
+      background: black;
+      height: 45px;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    div.container .contents{
+      padding: 15px 0px ;
+      background: darkgray;
+    }
+
+    div.container .contents .content{
+      width: 22%;
+      height: 300px;
+      float: left;
+      margin-left: 2.2%;
+    }
+
+    div.container .contents .content1{
+      border: 1px solid white;
+      background: red;
+    }
+
+    div.container .contents .content2{
+      border: 1px solid white;
+      background: purple;     
+    }
+
+    div.container .contents .content3{
+      border: 1px solid white;
+      background: orangered;   
+    }
+
+    div.container .contents .content4{
+      border: 1px solid white;
+      background: yellow;  
+    }
+
+    .container section.contents .box{
+      margin: 5px;
+      height: 150px;     
+  
+    }
+
+    .container section.contents .box1{
+      /* border: 2px solid white; */
+      background: url(../../../img/tulip.jpg);
+      background-size: cover;
+      background-position: -65px;
+
+    }
+
+    .container section.contents .box2{
+      /* border: 2px solid white; */
+      background: url(../../../img/jebi.jpg);
+      background-size: cover;
+      background-position: -60px;
+    }
+
+    .container section.contents .box3{
+      /* border: 2px solid white; */
+      background: url(../../../img/hobak.jpg);
+      background-size: cover;
+      background-position: -40px;
+    }
+
+    .container section.contents .box4{
+      /* border: 2px solid white; */
+      background: url(../../../img/sunflower.jpg);
+      background-size: cover;
+      background-position: -50px;
+    }  
+
+    p{
+      padding: 5px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    span{
+      color: yellow;
+      font-weight: 700;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <section class="main-title">
+      <h1>나의 아름다운 정원</h1>
+    </section>
+    <section class="sub-title">
+      <h2>사람들은 아마 자신에게 <span>자신감을 복돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+    </section>
+    <section class="contents clearfix">
+      <div class="content content1">
+        <div class="box box1"></div>
+        <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+          붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
+      </div>
+      <div class="content content2">
+        <div class="box box2"></div>
+        <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+          어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+          </p>
+      </div>
+      <div class="content content3">
+        <div class="box box3"></div>
+        <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+          매우 완숙한 이미지를 풍기는 꽃이다.</p>
+      </div>
+      <div class="content content4">
+        <div class="box box4"></div>
+        <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+          속하며 송이가 적어야 제격이다.</p>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>
