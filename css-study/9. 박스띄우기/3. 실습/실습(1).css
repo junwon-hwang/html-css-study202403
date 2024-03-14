@@ -1,0 +1,36 @@
+.container{
+  width: 320px;
+  height: auto;
+  margin: 50px auto;
+  background: pink;
+  border: 2px solid lightgray;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.container h1{
+  color: green;
+  padding-left: 10px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  /* position: relative; */
+}
+
+.container section{
+  padding-left: 20px;
+  color: gray;
+  padding-bottom: 0px;
+  font-weight: 500;
+  /* position: relative; */
+}
+
+.container section .content a{
+  color: blue;
+}
+.container section .content .ps{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
