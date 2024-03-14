@@ -1,0 +1,154 @@
+
+@import url(../../../common.css);
+
+body{
+  background: #666;
+  font-size: 14px;
+  line-height: 1.5 ;
+}
+
+#wrapper{
+  width: 80%;
+  margin: 0 auto; 
+}
+
+#wrapper header{
+  background: orange;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+}
+
+#wrapper header h1{
+  font-weight: 700;
+}
+
+#wrapper header span{
+  display: block;
+  font-size: 20px;
+    
+}
+
+#wrapper header h2.stit{
+  font-size: 13px;
+  background: rgb(180, 179, 179);
+  color : #000;
+  text-align: center;
+  font-weight: 600;
+}
+.container {
+  background: #fff;
+}
+.container .side-menu{
+  float: left;
+  width: 20%;
+  background: #fff;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.container .side-menu h3{
+  background: rgb(151, 30, 30);
+  color: #fff;
+  text-indent: 10px;
+}
+
+.container .side-menu ul li{
+  font-size: 13px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.container .main-content{
+  float: left;
+  width: 60%;
+  background: lightgray;
+  padding: 15px;
+  line-height: 20px;
+  color : #123456;
+}
+
+.container .main-content .art-piece .title{
+  background: #123456;
+  color: #fff;
+  padding: 5px;
+}
+
+.container .main-content .art-piece .artist{
+  line-height: 3;
+}
+
+.container .main-content .art-piece .detail{
+  font-size: 13px;
+  padding-bottom: 15px;  
+}
+
+
+.container .banner{
+  float: left;
+  width: 20%;
+  background: #fff;
+  text-indent: 10px;
+  padding-top: 10px;
+}
+
+.container .banner h3{
+  font-size: 20px;
+}
+
+.container .banner strong{
+  padding-left: 10px;
+  font-weight: 700;;
+}
+
+.container .banner .all{
+  display: block;
+  text-decoration: underline;
+  color: rgb(141, 138, 138);
+  font-weight: 700;
+}
+
+.container .banner .love{
+  display: block;
+  text-decoration: underline;
+  color: orange;
+  font-weight: 700;
+}
+
+.container .banner .link {
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+.container .banner .link a{
+  text-decoration: underline;
+}
+
+.container .banner .link span{
+  display: block;
+  font-size: 10px;
+}
+
+
+
+clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+footer{
+  background: #123456;
+  text-align: center;
+  color: #fff;
+  height: 30px;
+  padding-top: 5px;
+}
+
+footer a{
+  text-decoration: underline;
+}
+
+
+
