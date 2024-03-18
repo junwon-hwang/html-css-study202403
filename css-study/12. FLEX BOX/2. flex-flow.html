@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .warpper{
+      border: 4px solid #000;
+      padding:  20px;
+      display: flex;
+      /* flex-direction: row-reverse;
+      flex-wrap: wrap-reverse; */
+      /* 단축 속성 (개별 속성으로 사용하는것을 추천) */
+      flex-flow: column wrap;
+    }
+    .box{
+      width: 45%;
+      height: 100px;
+      border: 4px solid red;
+      border-radius: 10px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 700px){
+      .warpper{
+        /* flex-direction: column; */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="warpper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+    <div class="box">F</div>
+  </div>
+</body>
+</html>

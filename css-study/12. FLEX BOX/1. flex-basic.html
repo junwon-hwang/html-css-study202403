@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    border: 2px solid red;
+    padding: 20px;
+    /* flex는 부모한테 적용 해야함 */
+    display: flex;
+    /* row(기본값) 행 colum 열 */
+    flex-direction: row;
+  }
+
+  .item{
+    width: 100px;
+    height: 100px;
+    border: 2px solid orange;
+    border-radius: 15px;
+  }
+
+</style>
+<body>
+  
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+</body>
+</html>
