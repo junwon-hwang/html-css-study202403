@@ -1,0 +1,27 @@
+
+/* CSS파일이 다른 CSS파일을 불러오는 것 */
+
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+/* 공통 CSS를 기재하는 파일 */ 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+
+
+
+

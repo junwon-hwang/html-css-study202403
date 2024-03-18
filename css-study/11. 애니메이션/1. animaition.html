@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: greenyellow;
+    }
+
+    /* (2) hover에다가 입력 */
+    .box:hover{
+      /* animation: grow-shrink 2s; 단축속성*/
+      animation-name: grow-shrink;
+      animation-duration: 4s;
+      /* animation-delay : 500ms; */
+     
+      
+      /* 반복 횟수 */
+      animation-iteration-count: infinite;
+
+      /* 애니메이션 진행 속도 linear균일 ease 처음엔 빠르다가 느려짐 */
+      animation-timing-function: linear; 
+      /* 애니메이션 반복 방향 설정 */
+      /* 좀 더 움직임이 부드러워 짐 */
+      animation-direction: alternate;
+      /* 단축속성 */
+      /* 앞이 druation 뒤가 delay */
+      animation:2s 2s infinite linear alternate
+    }
+
+     
+
+    /* (1)먼저 애니메이션을 정의해야함 */
+    @keyframes grow-shrink{
+      0%{width: 100px;
+      background: greenyellow;}
+      50%{width: 500px;
+      background: orange;}
+      100%{width: 300px;
+      background: violet;}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
